@@ -1,5 +1,6 @@
 # Current-Slate
 Project Management Application(first try)
+
  The Project Management is a project application that is intended for Mentor-Mentee who work on projects in teams. This system provides an android application to carry out task related to project management, scheduling and completion of tasks. It contains all the records of the team members, their projects and deadlines which help them to get their projects completed efficiently and on time while ensuring co-ordination between different team members. 
  
 Implementation Details:
