@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_marginTop="10dp"
+    android:id="@+id/parentLayoutRecieved"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+
+    >
+
+
+    <RelativeLayout
+        android:layout_gravity="left"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/message_background"
+        android:padding="10dp"
+        >
+
+
+        <TextView
+            android:id="@+id/userNameTextViewRecieved"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Purva Agarwal"
+            android:layout_marginTop="10dp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_alignParentLeft="true"
+
+            />
+
+        <TextView
+            android:id="@+id/messageTextViewRecieved"
+            android:layout_width="wrap_content"
+            android:maxWidth="240dp"
+            android:layout_below="@+id/userNameTextViewRecieved"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Hello World"
+            android:layout_alignParentLeft="true"
+            android:textColor="#000"
+            android:autoLink="all"
+            android:linksClickable="true"
+            />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

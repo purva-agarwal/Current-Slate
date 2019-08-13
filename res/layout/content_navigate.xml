@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Navigate"
+    android:background="#fff"
+
+    tools:showIn="@layout/app_bar_navigate">
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profilephoto"
+        android:layout_width="86dp"
+        android:layout_height="79dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:src="@drawable/ic_perm_identity"
+        app:civ_border_color="#FF9800"
+        app:civ_border_width="3dp" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="152dp"
+        android:layout_height="32dp"
+        android:layout_below="@+id/profilephoto"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:gravity="center_vertical|center|center_horizontal"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textSize="18sp"
+        android:textColor="#000" />
+
+    <TextView
+        android:id="@+id/project"
+        android:layout_width="161dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_below="@+id/name"
+        android:layout_marginTop="159dp"
+        android:fontFamily="sans-serif"
+        android:gravity="center_vertical"
+        android:text="Project List:"
+        android:textColor="#000"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/mrv"
+        android:layout_width="match_parent"
+        android:layout_height="327dp"
+        android:layout_below="@+id/project"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="57dp" />
+
+
+
+</RelativeLayout>

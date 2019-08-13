@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#000">
+   <android.support.design.widget.AppBarLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:theme="@style/AppBarOverlay">
+
+      <android.support.v7.widget.Toolbar
+          android:id="@+id/toolbar"
+          android:layout_width="match_parent"
+          android:layout_height="?attr/actionBarSize"
+          android:background="@color/toolbar"
+          app:popupTheme="@style/PopupOverlay" />
+
+   </android.support.design.widget.AppBarLayout>
+
+
+   <DatePicker
+       android:id="@+id/date_picker"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_centerInParent="true"
+       android:animateLayoutChanges="true"
+       android:background="#00332822"
+       android:headerBackground="@color/toolbar"
+       android:spinnersShown="true"
+       android:visibility="visible">
+
+   </DatePicker>
+
+   <Button
+       android:id="@+id/btnNext"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Next"
+       android:drawableRight="@drawable/ic_arrow_forward"
+       android:layout_alignParentBottom="true"
+       android:background="@color/transparent"
+       android:layout_alignParentRight="true"
+       android:layout_marginBottom="10dp"
+       android:layout_marginRight="10dp"
+       />
+
+   <TextView
+       android:id="@+id/textView4"
+       android:layout_width="176dp"
+       android:layout_height="54dp"
+       android:layout_alignParentTop="true"
+       android:layout_alignStart="@+id/date_picker"
+       android:drawableLeft="@drawable/ic_notifications_black_24dp"
+       android:layout_marginTop="55dp"
+       android:gravity="center_vertical"
+       android:text="Deadline"
+       android:textSize="22sp"
+       android:textStyle="bold" />
+
+
+</RelativeLayout>

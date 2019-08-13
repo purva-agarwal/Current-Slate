@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/linearLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:clickable="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <ImageView
+        android:id="@+id/member_photo"
+        android:layout_width="54dp"
+        android:layout_height="48dp"
+        android:drawableStart="@drawable/ic_face_black_24dp"
+        android:drawableLeft="@drawable/ic_face_black_24dp" />
+    <TextView
+        android:id="@+id/member_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="20dp"
+        android:text="Purva Agarwal"
+        android:textColor="#000"
+        android:textStyle="bold"
+        app:fontFamily="sans-serif"
+        android:textSize="20sp" />
+
+</LinearLayout>

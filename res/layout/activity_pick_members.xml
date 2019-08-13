@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#fff">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/toolbar"
+            android:visibility="visible"
+            app:popupTheme="@style/PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <EditText
+        android:id="@+id/search_user_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:hint="Search by Name"
+        android:textColor="#000000"
+        android:textColorHint="#99000000" />
+
+    <ListView
+        android:id="@+id/list_view_search_result"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/search_user_edit_text">
+
+
+    </ListView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="21dp"
+        android:layout_below="@+id/list_view_search_result"
+        android:layout_marginLeft="15dp"
+        android:text="Mentor and -Members"
+        android:textColor="#000" />
+
+    <ListView
+        android:id="@+id/list_view_members"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/search_user_edit_text"
+        android:layout_marginTop="80dp"
+        >
+
+
+    </ListView>
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/toolbar"
+        android:drawableRight="@drawable/ic_arrow_forward"
+        android:text="Finish" />
+
+</RelativeLayout>
